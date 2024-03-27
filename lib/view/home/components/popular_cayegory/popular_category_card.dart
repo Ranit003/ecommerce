@@ -26,14 +26,17 @@ class PopularCategoryCard extends StatelessWidget {
               borderRadius: BorderRadius.circular(10),
             image:DecorationImage(image: imageProvider,fit: BoxFit.cover),
         ) ,
-           child: Text(
-            category.name,
-            style: TextStyle(
-              fontSize: 18,
-              fontWeight: FontWeight.bold,
-              color: Colors.white,
-            ),
-          ),
+           child: Padding(
+             padding: const EdgeInsets.all(10),
+             child: Text(
+              category.name,
+              style: TextStyle(
+                fontSize: 18,
+                fontWeight: FontWeight.bold,
+                color: Colors.white,
+              ),
+                       ),
+           ),
          ),
        ),
       placeholder: (context,url)=>Material(
